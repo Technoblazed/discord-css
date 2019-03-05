@@ -1,24 +1,24 @@
-.guilds-wrapper{width: 125px;}
-.guilds-wrapper .scroller-wrap{width: 150px;}
-.guilds-wrapper .guilds {
+div[class^="flex-"] > div[class^="wrapper-"] {width: 125px;}
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] {width: 140px;}
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] {
     display: flex;
     flex-flow: row wrap;
     padding-left: 0;
     align-content: flex-start;
 }
 
-.guilds-wrapper .guilds .guild {
-    margin-left: 8px;
-    margin-top: 8px;
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="container-"] {
+    margin-left: 9px;
+    margin-top: 0;
 }
 
-.guilds-wrapper .guilds .guild.unread::before {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class*=" unread-"]::before {
     left: -2px;
     top: 5px;
     z-index:9000;
 }
 
-.guilds-wrapper .guilds .guild:first-child {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="container-"]:first-child {
     position: relative;
     left: 0;
     margin: auto;
@@ -37,33 +37,33 @@
     text-align: center;
 }
 
-.guilds-wrapper .guilds .guild-separator {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="guildSeparator-"] {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.guilds-wrapper .guilds .friends-online {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="friendsOnline-"] {
     position: relative;
     width: 100%;
     margin: auto;
     margin-top: 5px;
 }
 
-.guilds-wrapper .guilds .guild.selected:before {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class*=" selected-"]:before {
     display: none;
 }
 
-.guilds-wrapper .guilds .guild {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="container-"] {
     position: relative;
 }
 
-.guilds-wrapper .guilds .dms {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
 }
 
-.guilds-wrapper .guilds .dms .guild {
+div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] > span[class^="container-"] {
     left: 0;
 }
