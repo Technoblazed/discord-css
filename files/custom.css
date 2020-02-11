@@ -1,69 +1,63 @@
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] {width: 125px;}
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] {width: 140px;}
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] {
+div[class^="base-"] { margin-left: 55px; }
+
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] {width: 125px;}
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] {width: 140px;}
+
+div[class^="unreadMentionsIndicatorTop"] {width:125px;}
+
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] {
     display: flex;
     flex-flow: row wrap;
     padding-left: 0;
     align-content: flex-start;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="container-"] {
-    margin-left: 9px;
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"] {
     margin-top: 0;
+    width: 62px;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class*=" unread-"]::before {
-    left: -2px;
-    top: 5px;
-    z-index:9000;
-}
-
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="container-"]:first-child {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"]:first-child {
     position: relative;
     left: 0;
     margin: auto;
     margin-top: 15px;
+    width: 125px;
 }
 
-#bd-pub-li {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"]:nth-child(2) {
+    width: 130px;
 }
 
-#bd-pub-li #bd-pub-button {
-    position:absolute;
-    width: 100%;
-    text-align: center;
-}
-
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="guildSeparator-"] {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"] > div[class^="guildSeparator-"] {
     position: relative;
     width: 100%;
     margin-top: 10px;
+    width: 65px;
+    margin-bottom: 10px;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="friendsOnline-"] {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="friendsOnline-"] {
     position: relative;
     width: 100%;
     margin: auto;
     margin-top: 5px;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class*=" selected-"]:before {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class*=" selected-"]:before {
     display: none;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="container-"] {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"] {
     position: relative;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
 }
 
-div[class^="layer-"] > div[class^="flex-"] > div[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] > span[class^="container-"] {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] > span[class^="listItem-"] {
     left: 0;
 }
