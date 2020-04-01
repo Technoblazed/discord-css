@@ -17,7 +17,7 @@ div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[c
     width: 62px;
 }
 
-div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"]:first-child {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="tutorialContainer-"] > div[class^="listItem-"] {
     position: relative;
     left: 0;
     margin: auto;
