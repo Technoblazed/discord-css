@@ -33,7 +33,7 @@ div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[c
     position: relative;
     width: 100%;
     margin-top: 10px;
-    width: 65px;
+    width: 130px;
     margin-bottom: 10px;
 }
 
@@ -44,12 +44,20 @@ div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[c
     margin-top: 5px;
 }
 
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[aria-label^="Servers"] {
+    width: 130px;
+}
+
 div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class*=" selected-"]:before {
     display: none;
 }
 
-div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[class^="listItem-"] {
+div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > div[aria-label^="Servers"] > div[class^="listItem-"] {
     position: relative;
+    display: inline-block;
+    width: 60px;
+    margin-top: 0;
+    padding-left: 5px;
 }
 
 div[class^="layer-"] > div[class^="container-"] > nav[class^="wrapper-"] > div[class^="scrollerWrap-"] > div[class^="scroller-"] > span[class^="dms-"] {
